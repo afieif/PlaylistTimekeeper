@@ -10,7 +10,7 @@ function App() {
     try {
       setLoading(true);
       const playlistId = extractPlaylistId(playlist);
-      const response = await fetch(`http://localhost:3001/time/${playlistId}`);
+      const response = await fetch(`https://playlisttimekeeper.onrender.com/time/${playlistId}`);
       if (!response.ok) {
         throw new Error('Network response was not ok');
       }
